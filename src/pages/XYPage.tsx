@@ -8,21 +8,21 @@ const XYPage = () => {
     const [x2, setX2] = React.useState(0)
     const [y2, setY2] = React.useState(0)
 
-    function changeX1(event: any) { //функция для обновления значений
+    const changeX1 = (event: any) => { //функция для обновления значений
         setX1(event.target.value)
     }
-    function ChangeY1(event: any) {
+    const changeY1 = (event: any) => {
         setY1(event.target.value)
     }
-    function changeX2(event: any) {
+    const changeX2 = (event: any) => {
         setX2(event.target.value)
     }
-    function ChangeY2(event: any) {
+    const ChangeY2 = (event: any) => {
         setY2(event.target.value)
     }
 
 
-    function checkZone() { // функция которая определяет координаты точек
+    const checkZone = () => { // функция которая определяет координаты точек
         if (x1 < 0 && y1 > 0 && x2 < 0 && y2 > 0) {
             console.log("zone 1")
         }
@@ -46,7 +46,7 @@ const XYPage = () => {
             <span>
                 Первая точка     
                 X: <input value={x1} onInput={(e) => changeX1(e)} />
-                    Y: <input value={y1} onInput={(e) => ChangeY1(e)} />
+                    Y: <input value={y1} onInput={(e) => changeY1(e)} />
             </span>
             <figure style={{ width:"900px", border:"1px solid black"}} ></figure>
             <span>

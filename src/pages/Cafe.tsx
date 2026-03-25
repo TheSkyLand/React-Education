@@ -17,21 +17,21 @@ const Cafe = () => {
     let p: any = []
     let summ = 0
 
-    function changeMoney(event: any) {
+    const changeMoney = (event: any) => {
         setMoney(Number(event.target.value))
     }
 
-    function changeDays(event: any) {
+    const changeDays = (event: any) => {
         setDays(event.target.value)
     }
 
-    function addEl(days: any, money: any) {
+    const addEl = (days: any, money: any) => {
         days.push(money)
         console.log(days)
         return days
     }
 
-    function testTest(arr: any, coupons: any) {
+    const testTest = (arr: any, coupons: any) => {
         
         let local = couponsCount;
         

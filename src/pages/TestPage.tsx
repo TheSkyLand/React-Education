@@ -5,7 +5,7 @@ import React, { useState } from "react"
 const TestPage = () => {
     const [arrOut, setArrOut] = useState([''])
     const [inputEl, setInputEl] = React.useState('')
-    function sortfunc() {
+    const sortfunc = () => {
         for (let i = 0; i < arrOut.length; i++) {
             for (let j = 0; j < arrOut.length - i; j++) {
                 if (arrOut[j] > arrOut[j + 1]) {
@@ -17,10 +17,10 @@ const TestPage = () => {
         console.log(arrOut)
     }
 
-    function changeInputEl(event: any) {
+    const changeInputEl = (event: any) => {
         setInputEl(event.target.value)
     }
-    function addEl() {
+    const addEl = () => {
         arrOut.splice(1, 0, inputEl)
         console.log(`${arrOut}`)
     }

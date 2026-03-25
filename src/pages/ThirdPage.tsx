@@ -9,11 +9,11 @@ export default function ThirdPage() {
     const [arrayEl, setArrayEl] = useState('');
     const [countNum, setCountNum] = useState(0);
 
-    function addEl() {
+    const addEl = () => {
         testArray.splice(1, 0, arrayEl)
         console.log(testArray)
     }
-    function countA() {
+    const countA = () => {
         const count = testArray.filter(e => e === a).length //простая функция сортировки
         setCountNum(count); 
         console.log(countNum)

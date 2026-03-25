@@ -7,14 +7,14 @@ const MeanPage = () => {
     const [array, setArray] = React.useState([])
     const [inputEl, setInputEl] = React.useState(0)
     const [mean, setMean] = React.useState(0)
-    function addItem(arr: any, inputEl: number) {
+    const addItem = (arr: any, inputEl: number) => {
         arr.push(inputEl)
         console.log(arr)
         return arr
     }
 
 
-    function gotMean(arr: any) {
+    const gotMean = (arr: any) => {
         let count = 0 // количество чисел
         let local = mean; // не помню для чего
         for (let i = 0; i < arr.length; i++) {
@@ -28,7 +28,7 @@ const MeanPage = () => {
 
 
 
-    function changeInputEl(event: any) {
+    const changeInputEl = (event: any) => {
         setInputEl(parseInt(event.target.value)) // для обновления usestate переменных
     }
 

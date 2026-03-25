@@ -7,14 +7,14 @@ const Task1 = () => {
     const [seq, setSeq] = React.useState([4, 8, 2, 6, 2, 10, 6, 29, 58, 9]);
     let testArr: number[] = [];
 
-    function changeNum(event: any) {
+    const changeNum = (event: any) => {
         setNum(event.target.value)
     }
-    function changeSubSeqEl(event: any) {
+    const changeSubSeqEl = (event: any) => {
         setSeqEl(event.target.value)
     }
     //executes the main function of the code
-    function Submit(arr: any) {
+    const Submit = (arr: any) => {
         debugger
 
         for (let i = 1; i < seq.length; i++) {

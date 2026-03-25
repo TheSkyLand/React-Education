@@ -11,8 +11,6 @@ interface SecurityProps {
 const SecurityCounter = (props: SecurityProps) => {
     const provide = (t: number) => {
         props.back(t + props.num)
-
-        console.log(props.back(t))
     }
     return (
             <div>
