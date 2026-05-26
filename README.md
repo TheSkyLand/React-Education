@@ -1,5 +1,7 @@
 # React Educational Project
 
+! 2026 Rework soon
+
 This repository contains educational frontend pages, components, and interactive utilities built with React and TypeScript.
 
 ## Project Structure
