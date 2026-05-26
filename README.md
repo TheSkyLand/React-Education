@@ -1,38 +1,42 @@
-### `npm start`
+# React Educational Project
 
-Стартуем локально
+This repository contains educational frontend pages, components, and interactive utilities built with React and TypeScript.
 
-### `npm run build`
+## Project Structure
 
-Билд проекта
+The project includes the following components and page views:
 
-### `git clone чужой репозиторий и git push ваш собственный репозиторий (Инструкция)`
+Keep in mind that those pages are commonly WIP
 
-Ссылка на чужой репозиторий как на другой репозиторий.
+* **`Cafe.tsx` / `CafeNew.tsx`**: Pages for Yandex cafe task with visual output(WIP).
+* **`Calculator.tsx`**: Interactive calculator tool layout and logic(WIP).
+* **`QrCode.tsx`**: QR code generation or scanning interface(WIP).
+* **`MainPage.tsx`**: Main landing page and primary navigation hub.
+* **`MeanPage.tsx`**: Mathematical mean calculation page.
+* **`New.tsx`**: Playground file for testing new components.
+* **`SecondPage.tsx` / `ThirdPage.tsx`**: Multi-page routing layout practice.
+* **`SecurityPage.tsx`**: Mock authentication or access control view.
+* **`SwitchPage.tsx`**: Theme toggling or conditional view switching practice.
+* **`TestPage.tsx`**: Environment for running component tests.
+* **`XYPage.tsx`**: Coordinate mapping or interactive grid system.
+* **`ErrorPage.tsx`**: Custom 404 / error handling page.
 
-### `Создайте новый репозиторий по адресу github/gitlab/bitbucket/etc. (это ваш репозиторий)`
+## Tech Stack
 
-! Дайте ему то же имя, что и другому репозиторию.
-! Не инициализируйте его с помощью README, .gitignore или лицензии.
+* **React** (Functional Components)
+* **TypeScript** (`.tsx` for type-safe UI development)
 
-### `Клонируйте другой репозиторий на свой локальный компьютер. (если вы еще этого не сделали)`
+## Getting Started
 
-git clone https://github.com/other-account/other-repository.git
-
-### `Переименуйте текущий 'origin' локального репозитория в 'upstream'.`
-
-git remote rename origin upstream
-
-### `Укажите локальному репозиторию 'origin', который указывает на ваш репозиторий.`
-
-git remote add origin https://github.com/your-account/your-repository.git
-
-### `Перенесите локальный репозиторий в ваш репозиторий на github.`
-
-git push origin main
-
-### `Теперь "origin" указывает на ваш репозиторий, а "upstream" указывает на другой репозиторий.`
-
-Создайте новую ветку для ваших изменений с помощью git checkout -b my-feature-branch.
-Можете юзать git commit как обычно, использовать свой репозиторий.
-Используется git pull upstream main для переноса изменений из другого репозитория в вашу основную ветку.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run start
+   ```
